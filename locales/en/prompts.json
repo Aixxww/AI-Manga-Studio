@@ -1,0 +1,32 @@
+{
+  "phase1": {
+    "audience_analysis": "As a top-tier manga editor with millions of copies sold, I'm preparing a web-savvy serialized manga targeting: ${TARGET_AUDIENCE}. Please analyze: 1) 3 most painful emotional pain points; 2) favorite 'unconventional/psycho' character archetypes; 3) 3 manga core ideas with strong 'contrast moe' or realistic satire.",
+    "topic_generation": "Generate 3 manga topics with strong contrast using formula: '[Classic/Fantasy setting] + [Ultra-realistic modern pain]'. Each includes: title, logline, biggest comedy conflict point."
+  },
+  "phase2": {
+    "world_rules": "Based on idea: ${LOGLINE}. Please set: 1) 3 absolute unbreakable world-building iron rules (must create trouble for protagonist); 2) 2 main factions with absurd conflict reason; 3) 1 unique daily phenomenon.",
+    "volume_outline": "Design Volume 1 (episodes 1-10) outline with 'introduction-development-climax-conclusion' structure. Requirements: protagonist's small goal; 1-10 core events (each with small obstacle); massive cliffhanger at episode 10."
+  },
+  "phase3": {
+    "character_dna": "Build character DNA archive for ${ROLE}: 1) Surface desire vs deep need; 2) Fatal weakness; 3) Signature action/catchphrase; 4) [IMPORTANT] Nano Banana 2 English image generation prompt (5-8 precise appearance tags).",
+    "character_arc": "Design ${CHARACTER}'s character arc in Volume 1: initial faith/flaw, 'dark night of the soul' event, new understanding at end."
+  },
+  "phase4": {
+    "scene_setup": "Scene: ${SCENE_DESC}. Provide: fixed angles and layout, detailed environment details, Nano Banana 2 English prompt.",
+    "prop_definition": "Prop: ${PROP_DESC}. Provide: appearance description, symbolic meaning, Nano Banana 2 English prompt.",
+    "atmosphere": "Emotion type: ${EMOTION}. Provide: visual expression of emotion, screentone/line usage, Nano Banana 2 English prompt (pure emotion, no character)."
+  },
+  "phase5": {
+    "episode_script": "Convert episode ${EPISODE_NUM} outline '${SUMMARY}' to 6-page manga storyboard script. Format: [Page X] Panel: (shot type) visual description; Dialogue: (concise, web-savvy); SFX: ...",
+    "cliffhanger": "Design strong 'page-turning' cliffhanger ending for episode ${EPISODE_NUM}. Context: ${CONTEXT}. Must make readers迫不及待 to see next episode. Provide visual description and dialogue."
+  },
+  "phase6": {
+    "dialogue_humanize": "This dialogue is too AI-sounding: ${DIALOGUE}. Rewrite: more colloquial, fits ${PERSONA} personality, add pauses/speech particles, add witty tsukkomi or internet meme.",
+    "god_tier_memory": "Design a 'god-tier' hilarious/reversal plot. Context: ${CONTEXT}. Requirements: human brain-fart ideas, strong contrast or absurdity, relatable and viral.",
+    "layout_break": "Design break-frame suggestions for '${CONTENT}': What elements can break out of panels? How can layout enhance emotional expression? Specific composition suggestions?"
+  },
+  "common": {
+    "style_base": "Vertical black and white Japanese manga page, screentone shading, high contrast line art, single manga panel, monochrome,",
+    "visual_anchor_warn": "WARNING: English tags below must be included every time, never modify!"
+  }
+}

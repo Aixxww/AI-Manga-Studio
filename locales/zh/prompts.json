@@ -1,0 +1,32 @@
+{
+  "phase1": {
+    "audience_analysis": "作为一名打造过千万级销量的顶尖少年/青年漫画编辑，我准备创作一部具有强烈网感的新连载漫画。目前锁定的目标受众群体是：${TARGET_AUDIENCE}。请为我分析：1）该群体最扎心的3个现实心理痛点；2）他们最喜欢的'反常规/疯批'人设类型；3）3个具有强烈'反差萌'的漫画核心脑洞。",
+    "topic_generation": "请基于'熟悉的配方+意想不到的味道'生成3个具有强烈反差感的漫画选题。公式：[王道题材/奇幻设定] + [极度接地气的现代烦恼]。每个选题包含：书名、Logline、最大喜剧冲突点。"
+  },
+  "phase2": {
+    "world_rules": "结合选定的脑洞：${LOGLINE}。请设定：1）3条绝对不可违背的世界观铁律（必须给主角制造麻烦）；2）2个主要阵营及荒诞的冲突原因；3）1个这个世界独有的日常现象。",
+    "volume_outline": "请设计第一卷（1-10话）的故事大纲，采用'起承转合'结构。要求：明确主角的小目标；列出1-10话的核心事件（每话一个小危机）；第10话结尾设置巨大悬念。"
+  },
+  "phase3": {
+    "character_dna": "请为${ROLE}建立角色DNA档案：1）表层欲望vs深层需求；2）致命弱点；3）标志动作/口头禅；4）【重要】Nano Banana 2英文生图Prompt（5-8个精准外貌标签）。",
+    "character_arc": "请设计${CHARACTER}在第一卷的角色弧光：最初的信仰/缺点、触发改变的'灵魂黑夜'事件、结尾处的新认知。"
+  },
+  "phase4": {
+    "scene_setup": "场景：${SCENE_DESC}。请提供：固定视角和布局、详细的环境细节、Nano Banana 2英文生图Prompt。",
+    "prop_definition": "道具：${PROP_DESC}。请提供：外观描述、象征意义、Nano Banana 2英文生图Prompt。",
+    "atmosphere": "情绪类型：${EMOTION}。请提供：情绪的视觉化表现、网点/线条运用建议、Nano Banana 2英文生图Prompt（纯情绪，无角色）。"
+  },
+  "phase5": {
+    "episode_script": "请将第${EPISODE_NUM}话大纲 '${SUMMARY}' 转化为6页漫画分镜脚本。格式：【第X页】分镜：（景别）画面描述；对白：（极简、网感）；SFX：...",
+    "cliffhanger": "请为第${EPISODE_NUM}话设计强烈的'翻页感'结尾。背景：${CONTEXT}。要求：让读者迫不及待看下一话，给出画面描述和对白。"
+  },
+  "phase6": {
+    "dialogue_humanize": "这段对白太AI味了：${DIALOGUE}。请重写：更口语化、符合${PERSONA}性格、加入断句和语气词、加入神吐槽或网络热梗。",
+    "god_tier_memory": "请为漫画设计一个'神回'级别的搞笑/反转情节。背景：${CONTEXT}。要求：人味脑洞、强烈反差或荒诞感、引发共鸣传播。",
+    "layout_break": "为 '${CONTENT}' 设计破框效果建议：哪些元素可以冲出格子？如何通过排版增强情感表达？具体构图建议？"
+  },
+  "common": {
+    "style_base": "Vertical black and white Japanese manga page, screentone shading, high contrast line art, single manga panel, monochrome,",
+    "visual_anchor_warn": "警告：以下英文标签每次生图必带，不可修改！"
+  }
+}
