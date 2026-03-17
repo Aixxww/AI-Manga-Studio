@@ -203,10 +203,3 @@ my-manga/
 - 最終10%の人間化は創作者が完了する必要がある
 - 画像生成モデルには不適合コンテンツがある可能性があり、手動レビューが必要
 
----
-
-## 関連リソース
-
-- Nano Banana 2: https://banana.openclaw.ai/
-- Gemini Flash Image: https://aistudio.google.com/
-- コマ割りリファレンス：『ONE PIECE』『呪術廻戦』『チェンソーマン』

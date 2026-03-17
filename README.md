@@ -12,13 +12,23 @@
 
 ---
 
-## 简介
+## 📚 阅读语言 / Language / 言語
+
+| 🇨🇳 中文 | 🇺🇸 English | 🇯🇵 日本語 |
+|---------|-------------|-----------|
+| [中文版](#简介) | [English](#english) | [日本語](#日本語) |
+
+---
+
+## 🇨🇳 中文版
+
+### 简介
 
 AI Manga Studio 是为 OpenClaw Agent 设计的漫画创作技能，提供完整的 AI 漫画创作流程指南。从受众分析到最终成稿，涵盖创作全流程，支持中/英/日三种语言。
 
 基于 **Gemini** 文本模型和 **Nano Banana 2** 图像模型，打造具有网感、强反差萌、适合社交媒体传播的连载漫画。
 
-## 特性
+### 特性
 
 - 🎯 **零基础友好**：完整的六阶段创作流程
 - 🌍 **多语言支持**：中文、英文、日文版本
@@ -26,15 +36,15 @@ AI Manga Studio 是为 OpenClaw Agent 设计的漫画创作技能，提供完整
 - 🎨 **视觉一致**：角色与场景固定 Prompt 模板
 - 💡 **去 AI 味**：人感注入技巧与排版建议
 
-## 安装
+### 安装
 
-### OpenClaw Agent
+#### OpenClaw Agent
 
 将此技能复制到 OpenClaw skills 目录：
 
 ```bash
 cd ~/.openclaw/skills
-git clone https://github.com/aixxww/ai-manga-studio.git
+git clone https://github.com/Aixxww/AI-Manga-Studio.git
 ```
 
 在 `openclaw.json` 中启用：
@@ -51,56 +61,23 @@ git clone https://github.com/aixxww/ai-manga-studio.git
 }
 ```
 
-### 独立使用
+#### 独立使用
 
 直接查看各语言版本的 SKILL 文件：
-
 - `SKILL.md` - 中文版
 - `SKILL_EN.md` - 英文版
 - `SKILL_JP.md` - 日文版
 
-## 快速开始
+### 快速开始
 
-### 1. 激活 AI 编辑引擎
+1. **激活 AI 编辑引擎** - 发送激活指令给 AI
+2. **分析受众痛点** - 使用受众分析模块
+3. **构建世界观** - 设定3条不可违背的铁律
+4. **建立角色 DNA** - 创建角色档案和视觉锚点
+5. **生成分镜脚本** - 将大纲转化为可执行的分镜
+6. **Nano Banana 2 生图** - 使用万能公式生成图像
 
-发送激活指令给 AI：
-
-> 你现在是拥有千万级销量打造经验的日本顶尖漫画编辑...
-> （详见 SKILL.md 激活部分）
-
-### 2. 分析受众痛点
-
-使用受众分析模块：
-
-> 我准备创作一部针对[目标群体]的漫画，请分析他们的核心痛点...
-
-### 3. 构建世界观
-
-使用世界观设定模块：
-
-> 结合我的选题，请设定3条不可违背的铁律...
-
-### 4. 建立角色 DNA
-
-创建角色档案和视觉锚点：
-
-> 我需要为主角建立角色DNA档案...
-
-### 5. 生成分镜脚本
-
-将大纲转化为可执行的分镜：
-
-> 请将第[X]话转化为漫画分镜脚本...
-
-### 6. Nano Banana 2 生图
-
-使用万能公式生成图像：
-
-```
-Vertical black and white Japanese manga page, screentone shading + 角色anchor + 动作 + 场景
-```
-
-## 项目结构
+### 项目结构
 
 ```
 ai-manga-studio/
@@ -110,108 +87,220 @@ ai-manga-studio/
 ├── README.md             # 本文件
 ├── package.json          # OpenClaw 元数据
 ├── locales/              # 多语言模板
-│   ├── zh/               # 中文提示词模板
-│   ├── en/               # 英文提示词模板
-│   └── jp/               # 日文提示词模板
 ├── prompts/              # 完整提示词库
-│   ├── phase1-audience.md
-│   ├── phase2-world.md
-│   ├── phase3-character.md
-│   ├── phase4-visual.md
-│   ├── phase5-script.md
-│   └── phase6-deai.md
 └── templates/            # 项目模板
-    ├── 01-persona.txt
-    ├── 02-ip-bible.txt
-    ├── 03-story.md
-    └── 04-render.txt
 ```
 
-## 六阶段流程
+### 六阶段流程
 
-### Phase 1: 破局与定位 (Market & Core Concept)
-- 受众目标群体画像分析
-- 选题与题材（反套路法则）
-- 故事内核定义
+1. **Phase 1**: 破局与定位 - 受众分析、反差选题
+2. **Phase 2**: 骨架构建 - 世界观铁律、卷首大纲
+3. **Phase 3**: 灵魂注入 - 角色DNA、视觉锚点
+4. **Phase 4**: 视觉资产 - 场景、道具、氛围
+5. **Phase 5**: 连载执行 - 分镜脚本转化
+6. **Phase 6**: 炼金术 - 去AI味、破格排版
 
-### Phase 2: 骨架构建 (World-building & Plot)
-- 世界观铁律设定
-- 卷首大纲规划
-- 悬念设计
-
-### Phase 3: 灵魂注入 (Characters & Progression)
-- 角色DNA建档
-- 视觉锚点Prompt
-- 角色弧光设计
-
-### Phase 4: 视觉资产的建档 (Visual Consistency)
-- 主场景固定Prompt
-- 核心道具定义
-- 氛围网点SOP
-
-### Phase 5: 连载执行与分镜 (Scripting & Storyboarding)
-- 章节设计脚本化
-- 分镜脚本转化
-- 翻页感设计
-
-### Phase 6: 炼金术——去AI味 (De-AI-fication)
-- 拒绝完美，拥抱瑕疵
-- 打破格子，制造破框
-- 对白与潜台词
-- 制造"神回"记忆点
-
-## Nano Banana 2 生图公式
+### Nano Banana 2 生图公式
 
 ```
 [画风基调] + [角色视觉锚点] + [动作表情] + [场景特效]
 ```
 
-**固定画风基调**：
-```
-Vertical black and white Japanese manga page, screentone shading, high contrast line art, single manga panel, monochrome,
-```
-
-**完整示例**：
-```
-Vertical black and white Japanese manga page, screentone shading, high contrast line art, single manga panel, monochrome,
-1boy, messy black hair, dead fish eyes, heavy eyebags, tired expression, loose unbuttoned office suit,
-is slamming his hands on a desk in frustration, screaming with a comic jagged speech bubble outline next to him,
-messy office background, dramatic dark lighting, vertical speed lines showing intense emotion.
-```
-
-## 技巧与最佳实践
-
-### 去AI味核心法则
-
-1. **拒绝完美，拥抱瑕疵**
-   - Prompt 加入：exhausted, messy hair, dead eyes, asymmetrical
-
-2. **打破格子，制造破框**
-   - 武器、魔法阵、对话气泡冲出格子
-
-3. **对白与潜台词**
-   - 删减冗长对话，画面能表现的不写
-
-4. **制造"神回"记忆点**
-   - 人味脑洞，幽默感
-
-### 角色一致性
-
-- 建立角色 DNA 档案
-- 固定 5-8 个英文 tag 作为视觉锚点
-- 每次生图必带相同标签
-
-## 环境变量
+### 环境变量
 
 ```bash
 AI_MANGO_STUDIO_LANG=zh  # 语言：zh/en/jp
 ```
 
-## 相关资源
+---
 
-- Nano Banana 2: https://banana.openclaw.ai/
-- Gemini Flash Image: https://aistudio.google.com/
-- OpenClaw: https://github.com/6551Team/openclaw
+## 🇺🇸 English
+
+### Introduction
+
+AI Manga Studio is an OpenClaw Agent skill for manga creation, providing a complete AI-assisted manga production workflow. From audience analysis to final rendering, covering the entire creative process with support for Chinese/English/Japanese.
+
+Powered by **Gemini** text model and **Nano Banana 2** image model, creating internet-viral serialized manga with strong contrast appeal.
+
+### Features
+
+- 🎯 **Beginner Friendly**: Complete six-stage workflow
+- 🌍 **Multi-language**: Chinese, English, Japanese versions
+- 🤖 **AI Driven**: Gemini + Nano Banana 2 integration
+- 🎨 **Visual Consistency**: Character & scene fixed prompt templates
+- 💡 **De-AI-fication**: Human touch injection & layout tips
+
+### Installation
+
+#### OpenClaw Agent
+
+Clone to OpenClaw skills directory:
+
+```bash
+cd ~/.openclaw/skills
+git clone https://github.com/Aixxww/AI-Manga-Studio.git
+```
+
+Enable in `openclaw.json`:
+
+```json
+{
+  "skills": {
+    "entries": {
+      "ai-manga-studio": {
+        "enabled": true
+      }
+    }
+  }
+}
+```
+
+#### Standalone Usage
+
+Read language-specific SKILL files:
+- `SKILL.md` - Chinese
+- `SKILL_EN.md` - English
+- `SKILL_JP.md` - Japanese
+
+### Quick Start
+
+1. **Activate AI Editor Engine** - Send activation command to AI
+2. **Analyze Audience Pain Points** - Use audience analysis module
+3. **Build World-view** - Set 3 unbreakable iron rules
+4. **Create Character DNA** - Build character profile & visual anchors
+5. **Generate Storyboard Script** - Convert outline to executable panels
+6. **Nano Banana 2 Image Generation** - Use universal formula
+
+### Project Structure
+
+```
+ai-manga-studio/
+├── SKILL.md              # Chinese skill definition
+├── SKILL_EN.md           # English skill definition
+├── SKILL_JP.md           # Japanese skill definition
+├── README.md             # This file
+├── package.json          # OpenClaw metadata
+├── locales/              # Multi-language templates
+├── prompts/              # Complete prompt library
+└── templates/            # Project templates
+```
+
+### Six-Stage Workflow
+
+1. **Phase 1**: Market & Concept - Audience analysis, reverse-topic
+2. **Phase 2**: World-building - Iron rules, volume outline
+3. **Phase 3**: Characters - Character DNA, visual anchors
+4. **Phase 4**: Visual Assets - Scenes, props, atmosphere
+5. **Phase 5**: Scripting - Storyboard conversion
+6. **Phase 6**: De-AI-fication - Human touch, break-frame layout
+
+### Nano Banana 2 Generation Formula
+
+```
+[Art Style Base] + [Character Visual Anchor] + [Action/Expression] + [Scene/Effects]
+```
+
+### Environment Variables
+
+```bash
+AI_MANGO_STUDIO_LANG=en  # Language: zh/en/jp
+```
+
+---
+
+## 🇯🇵 日本語
+
+### 紹介
+
+AIマンガスタジオはOpenClaw Agentのためのマンガ作成スキルで、完全なAI支援マンガ制作ワークフローを提供します。読者分析から最終レンダリングまで、制作全プロセスをカバーし、中国語/英語/日本語をサポートします。
+
+**Gemini**テキストモデルと**Nano Banana 2**画像モデルで、強いコントラスト魅力を持つインターネットバイラル連載マンガを作成します。
+
+### 特徴
+
+- 🎯 **初心者に優しい**：完全な6段階ワークフロー
+- 🌍 **多言語対応**：中国語、英語、日本語版
+- 🤖 **AI駆動**：Gemini + Nano Banana 2統合
+- 🎨 **ビジュアル一貫性**：キャラクターとシーン固定プロンプトテンプレート
+- 💡 **脱AI感**：人間感注入とレイアウトティップ
+
+### インストール
+
+#### OpenClaw Agent
+
+OpenClaw skillsディレクトリにクローン：
+
+```bash
+cd ~/.openclaw/skills
+git clone https://github.com/Aixxww/AI-Manga-Studio.git
+```
+
+`openclaw.json`で有効化：
+
+```json
+{
+  "skills": {
+    "entries": {
+      "ai-manga-studio": {
+        "enabled": true
+      }
+    }
+  }
+}
+```
+
+#### スタンドアロン使用
+
+言語別SKILLファイルを読む：
+- `SKILL.md` - 中国語
+- `SKILL_EN.md` - 英語
+- `SKILL_JP.md` - 日本語
+
+### クイックスタート
+
+1. **AI編集エンジン有効化** - AIにアクティベーションコマンドを送る
+2. **読者痛みポイント分析** - 読者分析モジュールを使用
+3. **世界観構築** - 破ってはいけない3つの鉄則を設定
+4. **キャラクターDNA作成** - キャラクタープロファイルとビジュアルアンカー作成
+5. **コマ割りスクリプト生成** - アウトラインを実行可能なコマに変換
+6. **Nano Banana 2画像生成** - 万能公式を使用
+
+### プロジェクト構造
+
+```
+ai-manga-studio/
+├── SKILL.md              # 中国語スキル定義
+├── SKILL_EN.md           # 英語スキル定義
+├── SKILL_JP.md           # 日本語スキル定義
+├── README.md             # 本ファイル
+├── package.json          # OpenClawメタデータ
+├── locales/              # 多言語テンプレート
+├── prompts/              # 完全プロンプトライブラリ
+└── templates/            # プロジェクトテンプレート
+```
+
+### 6段階ワークフロー
+
+1. **Phase 1**: 市場とコンセプト - 読者分析、逆説企画
+2. **Phase 2**: 世界観構築 - 鉄則、巻頭アウトライン
+3. **Phase 3**: キャラクター - キャラクターDNA、ビジュアルアンカー
+4. **Phase 4**: ビジュアル資産 - シーン、小道具、雰囲気
+5. **Phase 5**: 連載実行 - コマ割りスクリプト変換
+6. **Phase 6**: 脱AI感 - 人間の味、破枠レイアウト
+
+### Nano Banana 2生成公式
+
+```
+[画風ベース] + [キャラクタービジュアルアンカー] + [アクション/表情] + [シーン/エフェクト]
+```
+
+### 環境変数
+
+```bash
+AI_MANGO_STUDIO_LANG=jp  # 言語: zh/en/jp
+```
+
+---
 
 ## License
 
@@ -221,9 +310,9 @@ MIT License
 
 AIxxww
 
-## 贡献
+## 贡献 / Contribute / 貢献
 
-欢迎提交 Issue 和 Pull Request！
+欢迎提交 Issue 和 Pull Request！/ Welcome to submit Issues and Pull Requests! / IssueとPull Requestをお待ちしています！
 
 ---
 

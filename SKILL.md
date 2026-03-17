@@ -203,10 +203,3 @@ my-manga/
 - 最终10%的人味注入必须由创作者完成
 - 图像生成模型可能有不合规的内容，需要人工审核
 
----
-
-## 相关资源
-
-- Nano Banana 2: https://banana.openclaw.ai/
-- Gemini Flash Image: https://aistudio.google.com/
-- 漫画分镜参考：《海贼王》《咒术回战》《电锯人》

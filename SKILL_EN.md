@@ -203,10 +203,3 @@ my-manga/
 - Final 10% humanization must be completed by the creator
 - Image generation models may have non-compliant content, requiring manual review
 
----
-
-## Related Resources
-
-- Nano Banana 2: https://banana.openclaw.ai/
-- Gemini Flash Image: https://aistudio.google.com/
-- Storyboard References: *One Piece*, *Jujutsu Kaisen*, *Chainsaw Man*
